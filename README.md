@@ -9,10 +9,11 @@ The dataset used is the ["Spotify Features"](https://www.kaggle.com/datasets/geo
 
 ## How It Works
 
-1. **Extract**  
+1. **Extract**
+
    Loads the CSV into a pandas DataFrame.
 
-2. **Transform**  
+3. **Transform**  
    - Cleans duplicate and null data.
    - Normalizes text.
    - Creates dimension and fact tables:
@@ -21,14 +22,14 @@ The dataset used is the ["Spotify Features"](https://www.kaggle.com/datasets/geo
      - `dim_track`
      - `fact_audio`
 
-3. **Load**  
+4. **Load**  
    - Loads each table into a SQL Server database using SQLAlchemy.
    - SQL Server credentials are read from `config.json`.
 
 ### Setup
-
+```
 1. Clone the repository:
-```bash
+
 git clone https://github.com/yourusername/spotify-etl-pipeline.git
 cd spotify-etl-pipeline
 
@@ -49,4 +50,4 @@ pip install -r requirements.txt
 5. Run the ETL process:
 
   python main.py
-
+```
