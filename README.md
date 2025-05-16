@@ -28,7 +28,6 @@ The dataset used is the ["Spotify Features"](https://www.kaggle.com/datasets/geo
 ### Setup
 
 1. Clone the repository:
-
 ```bash
 git clone https://github.com/yourusername/spotify-etl-pipeline.git
 cd spotify-etl-pipeline
